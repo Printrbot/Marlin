@@ -324,8 +324,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #ifdef ENABLE_AUTO_BED_LEVELING
 
   // these are the positions on the bed to do the probing
-  #define LEFT_PROBE_BED_POSITION 10
-  #define RIGHT_PROBE_BED_POSITION X_MAX_LENGTH-10
+  #define LEFT_PROBE_BED_POSITION 120
+  #define RIGHT_PROBE_BED_POSITION X_MAX_LENGTH-120
   #define BACK_PROBE_BED_POSITION Y_MAX_LENGTH-10
   #define FRONT_PROBE_BED_POSITION 10
 
