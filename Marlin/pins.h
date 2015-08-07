@@ -1532,8 +1532,7 @@
 #define E0_DIR_PIN          7
 #define E0_ENABLE_PIN      19
 
-#define E1_STEP_PIN        24
-#define E1_DIR_PIN         25
+// E1 STEP, DIR differ in Printrboard versions, below:
 #define E1_ENABLE_PIN      44
 
 #define E2_STEP_PIN        26
@@ -1559,6 +1558,8 @@
   #define Z_STOP_PIN         15
   #define TEMP_0_PIN          7  // Extruder / Analog pin numbering
   #define TEMP_BED_PIN        6  // Bed / Analog pin numbering
+  #define E1_STEP_PIN        24
+  #define E1_DIR_PIN         25
 #elif MOTHERBOARD == 84 //Printrboard rev F
   #define X_STOP_PIN         35
   #define Y_STOP_PIN         12
@@ -1566,6 +1567,9 @@
   #define TEMP_0_PIN          1  // Extruder / Analog pin numbering
   #define TEMP_BED_PIN        0  // Bed / Analog pin numbering
   #define SDSS               20
+  #define E1_STEP_PIN        13
+  #define E1_DIR_PIN         37
+
 #else  // Printrboard rev A to E
   #define X_STOP_PIN         35
   #define Y_STOP_PIN          8
@@ -1573,6 +1577,8 @@
   #define TEMP_0_PIN          1  // Extruder / Analog pin numbering
   #define TEMP_BED_PIN        0  // Bed / Analog pin numbering
   #define SDSS               26
+  #define E1_STEP_PIN        24
+  #define E1_DIR_PIN         25
 #endif
 
 #define TEMP_1_PIN         2
